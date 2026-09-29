@@ -94,8 +94,8 @@ railway volume --service api        add --mount-path /var/lib/agenta
 Attaching a volume redeploys that service, so the stack bounces once; Postgres runs `initdb` on the
 fresh volume, `alembic` re-applies the migrations, and the `redis` wrapper chowns `/data` on boot.
 
-> Volumes are not part of the published template — Railway's snapshot does not carry them, so the
-> table above is the source of truth.
+> The template attaches these four automatically. The table above stays the source of truth for a
+> clone that ever lands without them.
 
 ---
 
