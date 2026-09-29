@@ -1,0 +1,12 @@
+.git
+.gitignore
+.github
+.vscode
+.idea
+*.md
+!README.md
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
